@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LCTL, KC_LGUI, KC_LALT, KC_KANA, LOWER,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
 ),
 
-/* Lower
+/* Raise
  * ,-----------------------------------------.   ,-----------------------------------------.
  * |   ~  |   !  |   @  |   #  |   $  |   %  |   |   ^  |   &  |   *  |   (  |   )  | Bksp |
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
@@ -53,14 +53,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |      |MuHen | Hen  |      |      |   |      |      | Home |PgDown| PgUp | End  |
  * `-----------------------------------------'   `-----------------------------------------'
  */
-[_LOWER] = LAYOUT_ortho_4x12( \
+[_RAISE] = LAYOUT_ortho_4x12( \
   KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_BSPC, \
   KC_DEL,  KC_MPRV, KC_MPLY, KC_MNXT, _______, _______, _______, KC_UNDS, KC_PLUS, KC_LCBR, KC_RCBR, _______, \
   _______, _______, KC_VOLD, KC_VOLU, _______, _______, _______, _______, _______, _______, _______, KC_PIPE, \
   _______, _______, KC_MHEN, KC_HENK, _______, _______, _______, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END   \
 ),
 
-/* Raise
+/* Lower
  * ,-----------------------------------------.   ,-----------------------------------------.
  * |   `  |   1  |   2  |   3  |   4  |   5  |   |   6  |   7  |   8  |   9  |   0  | Bksp |
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |      |  F11 |  F12 |      |      |      |   |      |      |      |      |      |      |
  * `-----------------------------------------'   `-----------------------------------------'
  */
-[_RAISE] = LAYOUT_ortho_4x12( \
+[_LOWER] = LAYOUT_ortho_4x12( \
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC, \
   KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   _______, KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, _______, \
   _______, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______, _______, _______, _______, _______, KC_BSLS, \
@@ -82,17 +82,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------.   ,-----------------------------------------.
  * |      | Reset|      |      |      |      |   |      |      |      |      |      |  Del |
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
- * |      |      |      |      |      |AGnorm|   |AGswap|Qwerty|Hue - |Hue + |RGBTog|      |
+ * |      |      |      |      |      |AGnorm|   |AGswap|Qwerty|Hue - |Hue + |RGBTog|Knight|
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
- * |      |BLTogg|BL Inc|BL Dec|BLBrtg|      |   |      |      |Sat + |Sat - |Static|Breath|
+ * |      |BLTogg|BL Inc|BL Dec|BLBrtg|      |   |      |      |Sat + |Sat - |Static|Swirl |
  * |------+------+------+------+------+------|   |------+------+------+------+------+------|
  * |      |      |      |      |      |      |   |      |      |Bri + |Bri - |Rainb |Gradi |
  * `-----------------------------------------'   `-----------------------------------------'
  */
 [_ADJUST] =  LAYOUT_ortho_4x12( \
   _______, RESET,   _______, _______, _______, _______, _______, _______, _______, _______, _______, KC_DEL,  \
-  _______, _______, _______, _______, _______, AG_NORM, AG_SWAP, QWERTY,  RGB_HUI, RGB_HUD, RGB_TOG, _______, \
-  _______, BL_TOGG, BL_INC,  BL_DEC,  BL_BRTG, _______, _______, _______, RGB_SAI, RGB_SAD, RGB_M_P, RGB_M_B, \
+  _______, _______, _______, _______, _______, AG_NORM, AG_SWAP, QWERTY,  RGB_HUI, RGB_HUD, RGB_TOG, RGB_M_K, \
+  _______, BL_TOGG, BL_INC,  BL_DEC,  BL_BRTG, _______, _______, _______, RGB_SAI, RGB_SAD, RGB_M_P, RGB_M_SW, \
   _______, _______, _______, _______, _______, _______, _______, _______, RGB_VAI, RGB_VAD, RGB_M_R, RGB_M_G  \
 )
 
