@@ -19,6 +19,15 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+/* Scarborough Fair is a simpler Levinson layout designed while
+ * using the keyboard at work. I have moved stuff around in order to
+ * access programming keys more easily.
+ *
+ * The name Scarborough Fair comes form the base guns in Bayonetta, a
+ * game I love and it conveys the idea of having a dual, powerful but
+ * simple, tool.
+ */
+
 #ifndef CONFIG_USER_H
 #define CONFIG_USER_H
 
