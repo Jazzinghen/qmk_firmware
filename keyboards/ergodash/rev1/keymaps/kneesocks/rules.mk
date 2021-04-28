@@ -1,4 +1,22 @@
-BACKLIGHT_ENABLE = yes
-RGBLIGHT_ENABLE = yes
-AUDIO_ENABLE = no
-USE_I2C = no
+BOOTMAGIC_ENABLE  = no       # Virtual DIP switch configuration(+1000)
+
+# Device
+AUDIO_ENABLE 	  = no
+
+RGBLIGHT_ENABLE   = yes
+BACKLIGHT_ENABLE  = yes
+INDICATOR_LIGHTS  = no
+
+# QMK Features
+AUTO_SHIFT_ENABLE = no
+MOUSEKEY_ENABLE   = no
+CONSOLE_ENABLE    = no       # Console for debug(+400)
+COMMAND_ENABLE    = no       # Commands for debug and configuration
+LEADER_ENABLE     = no      # default is yes
+TAP_DANCE_ENABLE  = no       #(+1254)
+UNICODE_ENABLE    = no       #(+1134)
+UNICODEMAP_ENABLE = no
+NKRO_ENABLE       = no
+MACROS_ENABLED    = no
+USE_I2C 		  = no
+EXTRAKEY_ENABLE   = yes
